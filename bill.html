@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+</head>
+
+<body>
+    <h1>See Shop Our Catalogue</h1>
+    <p>Select Drinks :D!</p>
+    <!-- Bellow is we have two forms of check boxes for food items and drink items. Each checkbox is 
+    allocated a unique id that will be called in our JS file for computation. Each form will also 
+    have an Add to cart button to call either the addDrinks() function or addFood() when clicked on
+    for their respective forms. All buttons will call functions through the use of the event onclick-->
+    <!-- ==================================Drink Items For Sale============================ -->
+    <form>
+        <input type="checkbox" id="Coke">Coke R15<br>
+        <input type="checkbox" id="Water">Water R8<br>
+        <input type="checkbox" id="Tea">Tea R5<br>
+        <input type="checkbox" id="Coffee">Coffee R12<br>
+        <input type="checkbox" id="Juice">Juice R18<br>
+        <button onclick="addDrinks()">Add To Cart</button>
+    </form>
+    <p>Select food :D!</p>
+    <!-- ==================================Food Items For Sale============================ -->
+    <form>
+        <input type="checkbox" id="Pizza">Pizza R30<br>
+        <input type="checkbox" id="Pie">Pie R10<br>
+        <input type="checkbox" id="Soup">Soup R5<br>
+        <input type="checkbox" id="Toast">Toast R12<br>
+        <input type="checkbox" id="Pap">Pap R3<br>
+        <button onclick="addFood()">Add To Cart</button>
+    </form>
+
+    <p>Please Tip Us...If you want to :D You're awesome!</p>
+    <!-- ==================================Tip button============================ -->
+    <!-- when the tip button is clicked on it will call out the addTip() function -->
+    <button onclick="addTip()">Add Tip To bill</button><br><br>
+
+    <p>See how much you owe</p>
+    <!-- ==================================Tip button============================ -->
+    <!-- when the total button is clicked on it will call out the addTotal() function -->
+    <button onclick="total()">See Total Of Your Bill</button><br><br>
+
+    <p>Change your mind? Clear your bill honey!</p>
+    <!-- ==================================Clear button============================ -->
+    <!-- when the total button is clicked on it will call out the addTotal() function -->
+    <button onclick="clearTotal()">Clear Total Of Your Bill</button>
+
+    <!-- Link to my Javascript file -->
+    <script src="bill.js"></script>
+</body>
+
+</html>
